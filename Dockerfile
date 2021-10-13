@@ -1,7 +1,6 @@
 FROM alpine:latest
 
-RUN apt-get update && apt-get upgrade -y && \
-  apt-get install -y nodejs \
+RUN apk add --upgrade nodejs \
   npm
 
 COPY package* ./
