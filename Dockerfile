@@ -1,5 +1,7 @@
 FROM alpine:latest
 
+COPY package* ./
+
 RUN npm install
 
 COPY . .
